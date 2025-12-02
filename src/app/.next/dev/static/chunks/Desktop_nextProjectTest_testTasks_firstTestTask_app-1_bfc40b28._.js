@@ -1,0 +1,379 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/utils/unils.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "fetchData",
+    ()=>fetchData,
+    "returnToDayData",
+    ()=>returnToDayData
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+;
+const returnToDayData = ()=>{
+    const today = new Date();
+    const dayOfWeekIndex = today.getDay();
+    const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ];
+    const dayOfWeek = days[dayOfWeekIndex];
+    const date = today.toISOString().split("T")[0];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        className: "text-2xl",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "text-green-700",
+                children: dayOfWeek
+            }, void 0, false, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/utils/unils.tsx",
+                lineNumber: 21,
+                columnNumber: 4
+            }, ("TURBOPACK compile-time value", void 0)),
+            ", ",
+            date
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/utils/unils.tsx",
+        lineNumber: 20,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+};
+const fetchData = async ()=>{
+    const response = await fetch("https://683857ff2c55e01d184cee44.mockapi.io/api/v1/tasks");
+    if (!response.ok) {
+        throw new Error("Failed to fetch tasks");
+    }
+    console.log(response);
+    return response.json();
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>CardOfTask
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/node_modules/next/image.js [app-client] (ecmascript)");
+;
+;
+const formatDate = (dateString)=>{
+    const date = new Date(dateString);
+    const day = date.getDate();
+    const month = date.toLocaleString("en-US", {
+        month: "long"
+    });
+    return `${day} ${month}`;
+};
+function CardOfTask({ task }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "bg-white rounded-lg p-4 shadow-sm border border-gray-200 mb-3 min-w-[200px] min-h-[200px]",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "font-semibold text-gray-900 mb-2 text-base",
+                children: task.title
+            }, void 0, false, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                lineNumber: 19,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-sm text-gray-600 mb-4 line-clamp-3",
+                children: task.description
+            }, void 0, false, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                lineNumber: 23,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center justify-between",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-medium",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                width: "12",
+                                height: "12",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "currentColor",
+                                strokeWidth: "2",
+                                strokeLinecap: "round",
+                                strokeLinejoin: "round",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                        cx: "12",
+                                        cy: "12",
+                                        r: "10"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                                        lineNumber: 39,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
+                                        points: "12 6 12 12 16 14"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                                        lineNumber: 40,
+                                        columnNumber: 7
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                                lineNumber: 29,
+                                columnNumber: 6
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: formatDate(task.dueDate)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                                lineNumber: 42,
+                                columnNumber: 6
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                        lineNumber: 28,
+                        columnNumber: 5
+                    }, this),
+                    task.assignees && task.assignees.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex -space-x-2",
+                        children: task.assignees.slice(0, 3).map((assignee)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-gray-200 relative",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: assignee.avatar,
+                                    alt: assignee.name,
+                                    fill: true,
+                                    className: "object-cover",
+                                    unoptimized: true
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                                    lineNumber: 52,
+                                    columnNumber: 9
+                                }, this)
+                            }, assignee.id, false, {
+                                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                                lineNumber: 48,
+                                columnNumber: 8
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                        lineNumber: 46,
+                        columnNumber: 6
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+                lineNumber: 27,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx",
+        lineNumber: 18,
+        columnNumber: 3
+    }, this);
+}
+_c = CardOfTask;
+var _c;
+__turbopack_context__.k.register(_c, "CardOfTask");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/ListOfTasks/ListOfTask.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ListOfTask
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$utils$2f$unils$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/utils/unils.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$component$2f$CardOfTask$2f$CardOfTask$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/CardOfTask/CardOfTask.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+;
+;
+;
+function ListOfTask() {
+    _s();
+    const [elements, setElements] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [priority, setPriority] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([
+        {
+            status: "to-do",
+            count: 0
+        },
+        {
+            status: "in-progress",
+            count: 0
+        },
+        {
+            status: "review",
+            count: 0
+        },
+        {
+            status: "completed",
+            count: 0
+        }
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "ListOfTask.useEffect": ()=>{
+            ({
+                "ListOfTask.useEffect": async ()=>{
+                    const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$utils$2f$unils$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetchData"])();
+                    console.log(data);
+                    setPriority({
+                        "ListOfTask.useEffect": (prev)=>{
+                            return prev.map({
+                                "ListOfTask.useEffect": (p)=>{
+                                    const count = data.filter({
+                                        "ListOfTask.useEffect": (task)=>task.status === p.status
+                                    }["ListOfTask.useEffect"]).length;
+                                    return {
+                                        ...p,
+                                        count
+                                    };
+                                }
+                            }["ListOfTask.useEffect"]);
+                        }
+                    }["ListOfTask.useEffect"]);
+                    setElements(data);
+                }
+            })["ListOfTask.useEffect"]();
+        }
+    }["ListOfTask.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex justify-between gap-4",
+        children: priority.map((el, key)=>{
+            const tasksForStatus = elements.filter((task)=>task.status === el.status);
+            const maxSlots = 3;
+            const emptySlotsCount = Math.max(0, maxSlots - tasksForStatus.length);
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col flex-1",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-lg font-semibold mb-4 capitalize",
+                        children: [
+                            el.status.replace("-", " "),
+                            " (",
+                            el.count,
+                            ")"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/ListOfTasks/ListOfTask.tsx",
+                        lineNumber: 71,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col gap-3",
+                        children: tasksForStatus.map((task)=>{
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$component$2f$CardOfTask$2f$CardOfTask$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                task: task
+                            }, task.id, false, {
+                                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/ListOfTasks/ListOfTask.tsx",
+                                lineNumber: 76,
+                                columnNumber: 16
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/ListOfTasks/ListOfTask.tsx",
+                        lineNumber: 74,
+                        columnNumber: 7
+                    }, this)
+                ]
+            }, key, true, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/ListOfTasks/ListOfTask.tsx",
+                lineNumber: 70,
+                columnNumber: 6
+            }, this);
+        })
+    }, void 0, false, {
+        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/ListOfTasks/ListOfTask.tsx",
+        lineNumber: 61,
+        columnNumber: 3
+    }, this);
+}
+_s(ListOfTask, "pOyCt32FX3LoamP3ynJQKNga9/A=");
+_c = ListOfTask;
+var _c;
+__turbopack_context__.k.register(_c, "ListOfTask");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$component$2f$ListOfTasks$2f$ListOfTask$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/component/ListOfTasks/ListOfTask.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$utils$2f$unils$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/utils/unils.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+const Page = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "p-5",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                className: "text-4xl pb-3 font-bold text-black",
+                children: "My Tasks"
+            }, void 0, false, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx",
+                lineNumber: 8,
+                columnNumber: 4
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mb-8",
+                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$utils$2f$unils$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["returnToDayData"])()
+            }, void 0, false, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx",
+                lineNumber: 9,
+                columnNumber: 4
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "p-15",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$nextProjectTest$2f$testTasks$2f$firstTestTask$2f$app$2d$1$2f$component$2f$ListOfTasks$2f$ListOfTask$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx",
+                    lineNumber: 11,
+                    columnNumber: 5
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx",
+                lineNumber: 10,
+                columnNumber: 4
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx",
+        lineNumber: 7,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_c = Page;
+const __TURBOPACK__default__export__ = Page;
+var _c;
+__turbopack_context__.k.register(_c, "Page");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=Desktop_nextProjectTest_testTasks_firstTestTask_app-1_bfc40b28._.js.map

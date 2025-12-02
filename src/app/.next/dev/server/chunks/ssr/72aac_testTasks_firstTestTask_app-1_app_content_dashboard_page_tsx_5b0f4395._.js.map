@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/oleksandr/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx"],"sourcesContent":["\"use client\";\nimport React, { useState } from \"react\";\n\nconst page = () => {\n\tconst [elements, setElements] = useState();\n\tconst priorityElements = [\"to do\", \"in progress\", \"Review\", \"completed\"];\n\n\treturn (\n\t\t<div>\n\t\t\t<h1>My Tasks</h1>\n\t\t\t<div className=\"mb-8\">\n\t\t\t\t<h1 className=\"text-4xl pb-3 font-bold text-black\">Setting</h1>\n\t\t\t\t{returnToDayData()}\n\t\t\t</div>\n\t\t\t<div className=\"p-30\">\n\t\t\t\t<div className=\"flex justify-between\">\n\t\t\t\t\t{priorityElements.map((el) => {\n\t\t\t\t\t\treturn <div className=\"\">{el}</div>;\n\t\t\t\t\t})}\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t);\n};\n\nexport default page;\n"],"names":[],"mappings":";;;;;AACA;AADA;;;AAGA,MAAM,OAAO;IACZ,MAAM,CAAC,UAAU,YAAY,GAAG,IAAA,yRAAQ;IACxC,MAAM,mBAAmB;QAAC;QAAS;QAAe;QAAU;KAAY;IAExE,qBACC,sTAAC;;0BACA,sTAAC;0BAAG;;;;;;0BACJ,sTAAC;gBAAI,WAAU;;kCACd,sTAAC;wBAAG,WAAU;kCAAqC;;;;;;oBAClD;;;;;;;0BAEF,sTAAC;gBAAI,WAAU;0BACd,cAAA,sTAAC;oBAAI,WAAU;8BACb,iBAAiB,GAAG,CAAC,CAAC;wBACtB,qBAAO,sTAAC;4BAAI,WAAU;sCAAI;;;;;;oBAC3B;;;;;;;;;;;;;;;;;AAKL;uCAEe"}}]
+}

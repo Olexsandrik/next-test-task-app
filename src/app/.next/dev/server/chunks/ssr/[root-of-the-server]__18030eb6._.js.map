@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///Users/oleksandr/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/settings/page.tsx"],"sourcesContent":["import SideBar from \"@/component/SideBar/SideBar\";\nimport React from \"react\";\n\nconst page = () => {\n\treturn (\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<p className=\"bg-green-50\">sidebar</p>sidebar\n\t\t\t\t<s />\n\t\t\t</div>\n\t\t</div>\n\t);\n};\n\nexport default page;\n"],"names":[],"mappings":";;;;;;AAGA,MAAM,OAAO;IACZ,qBACC,sTAAC;kBACA,cAAA,sTAAC;;8BACA,sTAAC;oBAAE,WAAU;8BAAc;;;;;;gBAAW;8BACtC,sTAAC;;;;;;;;;;;;;;;;AAIL;uCAEe"}}]
+}

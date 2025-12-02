@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///Users/oleksandr/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/content/dashboard/page.tsx"],"sourcesContent":["import React, { useState } from \"react\";\n\nconst page = () => {\n\tconst [elements, setElements] = useState();\n\tconst priorityElements = [\"to do\", \"in progress\", \"Review\", \"completed\"];\n\n\treturn (\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t{priorityElements.map((el) => {\n\t\t\t\t\treturn <div className=\"flex\">{el}</div>;\n\t\t\t\t})}\n\t\t\t</div>\n\t\t</div>\n\t);\n};\n\nexport default page;\n"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,OAAO;IACZ,MAAM,CAAC,UAAU,YAAY,GAAG,IAAA,yRAAQ;IACxC,MAAM,mBAAmB;QAAC;QAAS;QAAe;QAAU;KAAY;IAExE,qBACC,sTAAC;kBACA,cAAA,sTAAC;sBACC,iBAAiB,GAAG,CAAC,CAAC;gBACtB,qBAAO,sTAAC;oBAAI,WAAU;8BAAQ;;;;;;YAC/B;;;;;;;;;;;AAIJ;uCAEe"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/oleksandr/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/login/page.tsx"],"sourcesContent":["import React from \"react\";\n\n\n\nconst page = () => {\n\tconst { register, handleSubmit } = useForm<FormData>({\n\t\tdefaultValues: {\n\t\t\temail: \"\",\n\t\t\tpassword: \"\",\n\t\t},\n\t});\n\treturn (\n\t\t<div>\n\t\t\t<h1>Login</h1>\n\t\t</div>\n\t);\n};\n\nexport default page;\n"],"names":[],"mappings":";;;;;;AAIA,MAAM,OAAO;IACZ,MAAM,EAAE,QAAQ,EAAE,YAAY,EAAE,GAAG,QAAkB;QACpD,eAAe;YACd,OAAO;YACP,UAAU;QACX;IACD;IACA,qBACC,sTAAC;kBACA,cAAA,sTAAC;sBAAG;;;;;;;;;;;AAGP;uCAEe"}}]
+}

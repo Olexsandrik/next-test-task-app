@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///Users/oleksandr/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/dashboard/settings/page.tsx"],"sourcesContent":["import React from \"react\";\n\nconst Page = () => {\n\treturn <div>settings</div>;\n};\n\nexport default Page;\n\n"],"names":[],"mappings":";;;;;;AAEA,MAAM,OAAO;IACZ,qBAAO,sTAAC;kBAAI;;;;;;AACb;uCAEe"}}]
+}

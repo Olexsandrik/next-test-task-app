@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/oleksandr/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/login/page.tsx"],"sourcesContent":["\"use client\";\nimport InputForm from \"@/component/InputForm\";\nimport React from \"react\";\nimport { useForm } from \"react-hook-form\";\n\nexport type FormData = {\n\temail: string;\n\tpassword: string;\n};\nconst Page = () => {\n\tconst { register, handleSubmit } = useForm<{\n\t\temail?: string;\n\t\tpassword?: string;\n\t}>();\n\n\tconst onSubmit = (data: { email?: string; password?: string }) => {\n\t\tconsole.log(data);\n\t};\n\treturn (\n\t\t<div>\n\t\t\t<form onSubmit={handleSubmit(onSubmit)}>\n\t\t\t\t<div className=\"flex flex-col gap-2\">\n                    <div>\n\n                    </div>\n\t\t\t\t\t\n\t\t\t\t</div>\n\n\t\t\t\t<button type=\"submit\">Login</button>\n\t\t\t</form>\n\t\t</div>\n\t);\n};\n\nexport default Page;\n"],"names":[],"mappings":";;;;;AAGA;;;AAHA;;AASA,MAAM,OAAO;;IACZ,MAAM,EAAE,QAAQ,EAAE,YAAY,EAAE,GAAG,IAAA,oPAAO;IAK1C,MAAM,WAAW,CAAC;QACjB,QAAQ,GAAG,CAAC;IACb;IACA,qBACC,qQAAC;kBACA,cAAA,qQAAC;YAAK,UAAU,aAAa;;8BAC5B,qQAAC;oBAAI,WAAU;8BACC,cAAA,qQAAC;;;;;;;;;;8BAMjB,qQAAC;oBAAO,MAAK;8BAAS;;;;;;;;;;;;;;;;;AAI1B;GAvBM;;QAC8B,oPAAO;;;KADrC;uCAyBS"}}]
+}

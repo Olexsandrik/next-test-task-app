@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/oleksandr/Desktop/nextProjectTest/testTasks/firstTestTask/app-1/app/dashboard/layout.tsx"],"sourcesContent":["export default function DashboardLayout({\n\tchildren,\n}: {\n\tchildren: React.ReactNode;\n}) {\n\treturn (\n\t\t<div className=\"flex\">\n\t\t\t{\" \"}\n\t\t\t<aside className=\"w-64 bg-gray-800 text-white\">\n            SideBar\n\t\t\t</aside>\n\t\t\t<main className=\"flex-1\">{children}</main>\n\t\t</div>\n\t);\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,gBAAgB,EACvC,QAAQ,EAGR;IACA,qBACC,sTAAC;QAAI,WAAU;;YACb;0BACD,sTAAC;gBAAM,WAAU;0BAA8B;;;;;;0BAG/C,sTAAC;gBAAK,WAAU;0BAAU;;;;;;;;;;;;AAG7B"}}]
+}
